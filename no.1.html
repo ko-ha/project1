@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Counter</title>
+  <link rel="stylesheet" href="reset.css"> 
+  <link rel="stylesheet" href="no.1.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="top">
+                <h1>COUNTERS</h1>
+            </div>
+            <div class="middle">
+                <div class="message">
+                    <p>You don't have any counters.<br>Click the button below to start counting!</p>
+                </div>
+                <ul id="target" class="hidden">  
+                </ul>
+            </div>
+            <div class="bottom">
+                <button class="btn add-btn" onclick="toggle()">Add a couter</button>
+                <button class="btn reset-btn" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal" class="hidden">
+        <form onsubmit="addCounter(event)" name="counterForm" novalidate>
+            <h2>Type in!</h2>
+            <input type="text" name="title" placeholder="counter name" class="input">
+            <input type="text" name="description" placeholder="description" class="input">
+            <div class="modal-btn">
+                <button type="button" onclick="toggle()" class="mdl-button cancel-button">Cancel</button>
+                <button type="submit" class="mdl-button add-button">Add</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="no.1.js"></script>
+
+</body>

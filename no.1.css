@@ -1,0 +1,213 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hidden {
+    display: none !important;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-container {
+    width: 50%;
+    height: 70%;
+    background-color: rgba(143, 141, 136, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .main-container .top {
+    padding: 2.3rem 0;
+}
+
+main .main-container .top h1 {
+    font-size: 8rem;
+    color: whitesmoke;
+    width: 100%;
+}
+
+main .main-container .middle {
+    background-color: rgb(253, 253, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 45%;
+    min-width: 70%;   
+}
+
+main .main-container .middle #target {
+    box-sizing: border-box;
+    height: 80%;
+    width: 90%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+main .main-container .middle .target-li {
+    border: 2px solid rgba(143, 141, 136, 0.6);
+    background-color: rgb(253, 253, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 5%;
+    padding: 15px 0;
+    min-width: 35%;
+    max-width: 35%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+main .main-container .middle .target-li h3 {
+    font-weight: bold;
+    color: rgba(143, 141, 136, 0.8);
+    font-size: 1.3rem;
+}
+
+main .main-container .middle .target-li p {
+    color: rgba(143, 141, 136, 0.6);
+    font-size: 0.8rem;
+}
+
+main .main-container .middle .target-li .counter-value {
+    color: rgba(143, 141, 136, 0.8);
+    font-size: 1.3rem;
+}
+
+main .main-container .middle .target-li .count-btn {
+    background-color: rgba(143, 141, 136, 0.6);
+    color: whitesmoke;
+    border: none;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+}
+
+main .main-container .middle .target-li .count-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 1s 10ms ease;
+}
+
+main .main-container .middle .message p {
+    text-align: center;
+    line-height: 1.5rem;
+    color: rgba(143, 141, 136, 0.8);
+    text-shadow: 1px 1px whitesmoke;
+}
+
+main .main-container .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+main .main-container .bottom .add-btn {
+    margin-right: 15px;
+}
+
+main .main-container .bottom .reset-btn {
+    padding: 1px 1.65rem;
+    margin-left: 15px;
+}
+
+main .main-container .bottom .btn {
+    border: none;
+    color: rgba(143, 141, 136, 0.8);
+}
+
+main .main-container .bottom .btn:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgba(143, 141, 136, 1);
+    transition: all 0.5s 10ms ease;
+}
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#modal form {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    opacity: 1;
+}
+
+#modal form h2 {
+    color: rgba(143, 141, 136, 0.8);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#modal form input {
+    margin: 0.1rem;
+    border: 0.8px solid rgba(143, 141, 136, 0.8);
+}
+
+#modal form .modal-btn {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal form .modal-btn .mdl-button {
+    border: 0.5px solid rgba(143, 141, 136, 0.8);
+    color: rgba(143, 141, 136, 0.8);
+}
+
+#modal form .modal-btn .mdl-button:hover {
+    cursor: pointer;
+    color: rgba(143, 141, 136, 1);
+}
+
+#modal form .modal-btn .add-button {
+    padding: 1px 0.95rem;
+    margin-left: 10px;
+}
+
+#modal form .modal-btn .cancel-button {
+    margin-right: 10px;
+}
+
